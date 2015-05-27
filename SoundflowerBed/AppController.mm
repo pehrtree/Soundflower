@@ -892,7 +892,7 @@ MySleepCallBack(void * x, io_service_t y, natural_t messageType, void * messageA
 		[self buildRoutingMenu:NO];
 		
 		// now read prefs
-		[self readGlobalPrefs];
+		//[self readGlobalPrefs]; // 05/2015: this is failing due to 16 vs 64 ch differences
 	}
 	
 	// ask to be notified on system sleep to avoid a crash
